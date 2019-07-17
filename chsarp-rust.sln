@@ -3,18 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chsarp-rust", "chsarp-rust\chsarp-rust.csproj", "{97D19208-A8F7-48F7-909A-96F6838F90AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "chsarp-rust", "chsarp-rust\chsarp-rust.csproj", "{97D19208-A8F7-48F7-909A-96F6838F90AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{97D19208-A8F7-48F7-909A-96F6838F90AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97D19208-A8F7-48F7-909A-96F6838F90AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97D19208-A8F7-48F7-909A-96F6838F90AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97D19208-A8F7-48F7-909A-96F6838F90AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97D19208-A8F7-48F7-909A-96F6838F90AF}.Debug|x64.ActiveCfg = Debug|x64
+		{97D19208-A8F7-48F7-909A-96F6838F90AF}.Debug|x64.Build.0 = Debug|x64
+		{97D19208-A8F7-48F7-909A-96F6838F90AF}.Release|x64.ActiveCfg = Debug|x64
+		{97D19208-A8F7-48F7-909A-96F6838F90AF}.Release|x64.Build.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,12 +5,18 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>chsarp_rust</RootNamespace>
     <UseWPF>true</UseWPF>
+    <Platforms>x64</Platforms>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\rust-lib\target\$(Configuration)\rust_lib.dll">
+    <None Include="..\rust-lib\target\$(ConfigurationName)\rust_lib.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="cd $(SolutionDir)/rust-lib&#xD;&#xA;&#xD;&#xA;if $(ConfigurationName) == Debug (&#xD;&#xA;    cargo build&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;if $(ConfigurationName) == Release (&#xD;&#xA;    cargo build --release&#xD;&#xA;)&#xD;&#xA;" />
+  </Target>
 
 </Project>
