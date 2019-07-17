@@ -6,8 +6,10 @@ namespace chsarp_rust
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            var test = RustLib.GetString();
-            var viewModel = new ViewModel(test);
+            var rustString = RustLib.GetString();
+            var rustStruct = RustLib.GetStruct();
+
+            var viewModel = new ViewModel(rustString, rustStruct.IntVal);
 
             MainWindow = new MainWindow
             {

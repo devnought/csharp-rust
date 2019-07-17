@@ -6,6 +6,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="{Binding Path=Value, FallbackValue=VALUE}" />
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <Label Content="{Binding Path=StringValue, FallbackValue=VALUE}" />
+        <Label Grid.Row="1"
+               Content="{Binding Path=IntValue, FallbackValue=VALUE}" />
     </Grid>
 </Window>

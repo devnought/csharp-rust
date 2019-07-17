@@ -2,11 +2,14 @@
 {
     public class ViewModel
     {
-        public ViewModel(string value)
+        public ViewModel(string stringValue, long intValue)
         {
-            Value = value;
+            StringValue = stringValue;
+            IntValue = intValue;
         }
 
-        public string Value { get; }
+        public string StringValue { get; }
+
+        public long IntValue { get; }
     }
 }

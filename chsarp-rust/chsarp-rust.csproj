@@ -16,8 +16,4 @@
     </None>
   </ItemGroup>
 
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="cd $(SolutionDir)/rust-lib&#xD;&#xA;cargo build --release" />
-  </Target>
-
 </Project>
