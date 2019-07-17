@@ -1,0 +1,7 @@
+.vs
+**/target
+**/*.rs.bk
+**/bin
+**/obj
+Cargo.lock
+**/*.user
