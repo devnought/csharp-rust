@@ -7,6 +7,7 @@
     <UseWPF>true</UseWPF>
     <Platforms>x64</Platforms>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <WarningsAsErrors />
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,9 +15,5 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="cd $(SolutionDir)/rust-lib&#xD;&#xA;&#xD;&#xA;if $(ConfigurationName) == Debug (&#xD;&#xA;    cargo build&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;if $(ConfigurationName) == Release (&#xD;&#xA;    cargo build --release&#xD;&#xA;)&#xD;&#xA;" />
-  </Target>
 
 </Project>
