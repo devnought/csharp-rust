@@ -11,9 +11,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\rust-lib\target\$(ConfigurationName)\rust_lib.dll">
+    <None Include="..\rust-lib\target\release\rust_lib.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="cd $(SolutionDir)/rust-lib&#xD;&#xA;cargo build --release" />
+  </Target>
 
 </Project>
